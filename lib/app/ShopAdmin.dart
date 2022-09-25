@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ShopAdmin extends StatefulWidget {
-  const ShopAdmin({super.key, required this.title});
+  const ShopAdmin({super.key});
 
-  final String title;
 
   @override
   State<ShopAdmin> createState() => _ShopAdmin();
@@ -22,7 +21,7 @@ class _ShopAdmin extends State<ShopAdmin> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Admin Portal"),
       ),
       body: Center(
         child: Column(
@@ -36,13 +35,7 @@ class _ShopAdmin extends State<ShopAdmin> {
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+        ),// This trailing comma makes auto-formatting nicer for build methods.
+     ),);
   }
 }
